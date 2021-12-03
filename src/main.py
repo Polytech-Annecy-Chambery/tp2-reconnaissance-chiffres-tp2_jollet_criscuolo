@@ -24,13 +24,13 @@ if __name__ == '__main__':
     # Lecture image et affichage
     #==============================================================================
     image = Image()
-    image.load(path_to_assets + 'test2.JPG')
+    image.load(path_to_assets + 'test3.JPG')
     image.display("Exemple d'image")
 
     #==============================================================================
     # Binarisation de l'image et affichage
     #==============================================================================
-    S = 70
+    S = 250
     image_binarisee = image.binarisation(S)
     image_binarisee.display("Image binarisee")
 
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     #==============================================================================
     # Redimensionnement de l'image et affichage
     #==============================================================================
-    image_resizee = image_localisee.resize(100, 500)
+    image_resizee = image_localisee.resize(100, 100)
     image_resizee.display("Image redimensionee")
 
     #==============================================================================
